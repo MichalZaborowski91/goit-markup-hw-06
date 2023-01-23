@@ -734,20 +734,21 @@
 
         <form name="newsletter" class="newsletter">
           <div class="newsletter-box">
-            <label for="userEmail" class="join-newsletter">
+            <label for="MainUserEmail" class="join-newsletter">
               Zapisz się do newslettera
             </label>
             <input
               class="input-email-window"
               type="email"
               name="email"
-              id="userEmail"
+              id="MainUserEmail"
               placeholder="E-mail"
+              required
             />
           </div>
           <div class="newsletter-button">
             <button type="submit" class="newsletter-content">
-              <p>Zapisz się</p>
+              Zapisz się
               <svg width="24px" height="24px">
                 <use
                   class="icon-send"
@@ -777,6 +778,8 @@
                 type="text"
                 name="username"
                 id="userName"
+                pattern="^(?!=.*\d)(.*)$"
+                required
               />
               <svg width="18px" height="18px" class="form-icon person">
                 <use href="./images/icons.svg#icon-Vector"></use>
@@ -789,6 +792,8 @@
                 type="tel"
                 name="phoneNumber"
                 id="userPhone"
+                pattern="^(?=.*\d)(.*)$"
+                required
               />
               <svg width="18px" height="18px" class="form-icon phone">
                 <use href="./images/icons.svg#icon-Vector-1"></use>
@@ -801,6 +806,7 @@
                 type="email"
                 name="email"
                 id="userEmail"
+                required
               />
               <svg width="18px" height="18px" class="form-icon email">
                 <use href="./images/icons.svg#icon-Vector-2"></use>
@@ -810,20 +816,25 @@
               <label for="userComment" class="label-form">Komentarz</label>
               <textarea
                 class="input-box-comment"
-                type="text"
                 name="comment"
                 id="userComment"
                 placeholder="Wprowadź tekst"
               ></textarea>
             </li>
-            <li>
-              <input type="checkbox" name="termsandconditions" />
-              <label class="label-terms"
-                >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-                <a href="#">Politykę Prywatności.</a></label
-              >
-            </li>
           </ul>
+          <div class="therms-and-conditions-box">
+            <input
+              id="thickbox"
+              type="checkbox"
+              name="termsandconditions"
+              class="checkbox-terms"
+              required
+            />
+            <label for="thickbox" class="label-terms"
+              >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności.</a></label
+            >
+          </div>
           <button class="modal-form-button" type="submit">Wyślij</button>
         </form>
       </div>
