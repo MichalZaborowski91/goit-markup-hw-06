@@ -44,10 +44,10 @@ body {
 
 .logo .color {
   color: var(--hilight-color);
-  font-family: "oleo script";
-  font-weight: 400;
+  font-family: "Raleway";
+  font-weight: 700;
   font-size: 26px;
-  line-height: 35, 96px;
+  line-height: 30.52px;
   letter-spacing: 0.03em;
 }
 .logo .color-upper {
@@ -773,7 +773,7 @@ figure {
 }
 
 .input-box:focus {
-  border: 1px solid rgba(33, 150, 243, 1);
+  outline: 1px solid rgba(33, 150, 243, 1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -795,7 +795,7 @@ figure {
   letter-spacing: 0.03em;
 }
 .input-box-comment:focus {
-  border: 1px solid rgba(33, 150, 243, 1);
+  outline: 1px solid rgba(33, 150, 243, 1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
